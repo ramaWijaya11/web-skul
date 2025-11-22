@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMA Negeri 7 Surakarta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: #f2f2f2; /* Warna background abu muda (sama dengan section berita) */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .card-success {
+        background: white;
+        padding: 50px 40px;
+        border-radius: 25px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+        animation: fadeInUp 0.8s ease;
+      }
+
+      /* Lingkaran Icon */
+      .icon-container {
+        width: 80px;
+        height: 80px;
+        background-color: #d1fae5; /* Hijau sangat muda */
+        color: #008000; /* Hijau utama */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 25px auto;
+        font-size: 40px;
+        animation: popIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s both;
+      }
+
+      .card-success h1 {
+        color: #202020;
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+
+      .card-success p {
+        color: #747474;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+
+      /* Tombol Kembali */
+      .btn-back {
+        display: inline-block;
+        background-color: #008000;
+        color: white;
+        text-decoration: none;
+        padding: 12px 35px;
+        border-radius: 30px;
+        font-weight: 600;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+      }
+
+      .btn-back:hover {
+        background-color: #00ff00;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 128, 0, 0.3);
+      }
+
+      /* Footer kecil */
+      .mini-footer {
+        margin-top: 30px;
+        font-size: 12px;
+        color: #aaa;
+      }
+
+      /* Animasi */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes popIn {
+        from {
+          opacity: 0;
+          transform: scale(0);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* Responsive Mobile */
+      @media (max-width: 480px) {
+        .card-success {
+          padding: 40px 20px;
+        }
+        .card-success h1 {
+          font-size: 26px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-success">
+      <div class="icon-container">
+        <i class="fa-solid fa-check"></i>
+      </div>
+
+      <h1>Terima Kasih!</h1>
+      <p>
+        Saran Anda telah berhasil kami terima. <br />
+        Kami sangat menghargai masukan Anda untuk membuat sekolah kita menjadi lebih baik lagi.
+      </p>
+
+      <a href="index.html" class="btn-back">
+        <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i> Kembali ke Beranda
+      </a>
+
+      <div class="mini-footer">
+        &copy; SMA Negeri 7 Surakarta
+      </div>
+    </div>
+  </body>
+</html>

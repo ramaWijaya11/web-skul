@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  height: 80%;
+}
+
+body {
+
+  height: 80 vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+}
+
+/* Container Form */
+.container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+/* Card Form */
+.form-card {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+.form-card h2 {
+  text-align: center;
+  color: #182848;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Logo placeholder */
+.logo-space {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.logo-placeholder {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #5f72bd, #9bafd9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(91, 134, 229, 0.5);
+}
+
+/* Label dan Input */
+label {
+  display: block;
+  margin-top: 15px;
+  color: #182848;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border: 1.5px solid #bfc8e6;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4b6cb7;
+  box-shadow: 0 0 0 3px rgba(75, 108, 183, 0.15);
+}
+
+/* Radio Button Group */
+.radio-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+/* Tombol */
+button {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #5f72bd, #9bafd9);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(75, 108, 183, 0.4);
+}
+
+/* Responsif */
+@media (max-width: 500px) {
+  .form-card {
+    padding: 25px 20px;
+  }
+
+  .logo-placeholder {
+    width: 70px;
+    height: 70px;
+    font-size: 11px;
+  }
+}
