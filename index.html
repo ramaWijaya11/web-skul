@@ -1,29 +1,15 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
   <head>
-
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
-
       rel="stylesheet"
-
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-
     />
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-
     <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
-
     <title>SMA Negeri 7 Surakarta</title>
-
-
-
     <!-- Fav Icon -->
 
     <link
@@ -35,79 +21,40 @@
       type="image/x-icon"
 
     />
-
-
-
     <!-- CSS -->
-
-    <link rel="stylesheet" href="dist/css/style.css" />
-
-
-
+    <link rel="stylesheet" href="style.css" />
     <!-- Font Poppins -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" /> -->
 
-
-
     <!-- Font Awesome CDN -->
-
     <link
-
       rel="stylesheet"
-
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-
       crossorigin="anonymous"
-
       referrerpolicy="no-referrer"
-
     />
-
   </head>
-
   <body>
-
     <!-- Navbar -->
-
     <div class="navbar">
-
       <div class="containerr">
-
         <div class="navbar-box">
-
           <div class="logo">
-
             <img src="assets/icon/smoepi-removebg-preview.png" alt="" />
-
             <h1>SMOEPHY</h1>
-
           </div>
-
-          <!-- <div class="iconn">
-
+          <div class="iconn">
             <i class="ph ph-list"></i>
-
-          </div> -->
-
+          </div>
           <ul class="menu">
-
             <li class="ganti">
-
               <a href="#tentangKami">Tentang</a>
-
             </li>
-
             <li class="ganti">
-
               <a href="#guru">Guru</a>
-
             </li>
 
             <li class="ganti">
@@ -161,289 +108,137 @@
         // Opsional: Ubah icon dari list ke silang (X)
 
         const iconElement = menuIcon.querySelector("i");
-
         if (navbarMenu.classList.contains("active")) {
-
           iconElement.classList.replace("ph-list", "ph-x");
-
         } else {
-
           iconElement.classList.replace("ph-x", "ph-list");
-
         }
-
       });
-
-
 
       // (Opsional) Klik di luar sidebar untuk menutup menu
-
       document.addEventListener("click", function (e) {
-
         if (!menuIcon.contains(e.target) && !navbarMenu.contains(e.target)) {
-
           navbarMenu.classList.remove("active");
-
           const iconElement = menuIcon.querySelector("i");
-
           iconElement.classList.replace("ph-x", "ph-list");
-
         }
-
       });
-
     </script>
-
-
 
     <!-- Navbar -->
 
-
-
     <!-- Hero -->
-
     <div class="hero" id="Home">
-
       <div class="containerr">
-
         <div class="hero-box">
-
           <h1>
-
             Selamat Datang di <br />
-
             SMA Negeri 7 Surakarta
-
           </h1>
-
           <p>
-
             Berdiri sejak tahun 1984, SMA Negeri 7 Surakarta telah menempatkan
-
             dirinya sebagai salah satu sekolah yang menjadi dambaan dan harapan
-
             warga masyarakat surakarta khususnya dan Jawa Tengah umumnya
-
           </p>
-
           <a href="#tentangKami">Lihat Tentang Kami</a>
-
         </div>
-
       </div>
-
     </div>
 
     <!-- Hero -->
 
-
-
     <!-- Tentang Kami -->
-
     <div class="tentang" id="tentangKami">
-
       <div class="containerr">
-
         <div class="tentang-box">
-
           <div class="box">
-
             <!-- <img src="/assets/images/carousel-2.jpg" alt="Tentang image" /> -->
-
             <img src="assets/images/carousel-2.jpg" alt="" />
-
           </div>
-
           <div class="box1">
-
             <h1>Tentang Kami</h1>
-
             <p>
-
               SMA Negeri 7 Surakarta berdiri pada tahun 1984 berdasarkan
-
               Kepututusan Menteri Pendidikan dan Kebudayaan Republik Indonesia
-
               Nomor : 0558/1984 tertanggal 20 Nopember 1984. Sementara menempati
-
               Gedung SMA Negeri 3 Surakarta sedangkan Kepala Sekolah diampu oleh
-
               Drs. Soeyono selaku Kepala SMA Negeri 3 Surakarta. Pada tahun 1985
-
               membangun gedung sekolah baru di Jalan Mr. Muhammad Yamin no. 79
-
               Kelurahan Tipes Kecamatan Serengan Kota Surakarta. Pada tanggal 21
-
               Pebruari 1986 pindah tempat di gedung baru yang diberi Nama
-
               "Boyong Mandiri" dari SMA Negeri 3 Surakarta Kerkop menuju gedung
-
               baru SMA Negeri 7 Surakarta di Jalan Mr. Muhammad Yamin No. 79
-
               Surakarta.
-
             </p>
-
           </div>
-
         </div>
-
         <div class="container-fluid fact bg-dark my-5 py-5">
-
           <div class="container">
-
             <div class="row g-4">
-
               <div
-
                 class="col-md-6 col-lg-3 text-center wow fadeIn"
-
                 data-wow-delay="0.1s"
-
               >
-
                 <i class="fa fa-users fa-2x text-white mb-3"></i>
-
                 <h2 class="text-white mb-2" data-toggle="counter-up">78</h2>
-
                 <p class="text-white mb-0">Guru & Staff</p>
-
               </div>
-
               <div
-
                 class="col-md-6 col-lg-3 text-center wow fadeIn"
-
                 data-wow-delay="0.3s"
-
               >
-
                 <i class="fa fa-hotel fa-2x text-white mb-3"></i>
-
                 <h2 class="text-white mb-2" data-toggle="counter-up">123</h2>
-
                 <p class="text-white mb-0">Ruang Kelas & Laboratorium</p>
-
               </div>
-
               <div
-
                 class="col-md-6 col-lg-3 text-center wow fadeIn"
-
                 data-wow-delay="0.5s"
-
               >
-
                 <i class="fa fa-check fa-2x text-white mb-3"></i>
-
                 <h2 class="text-white mb-2" data-toggle="counter-up">23</h2>
-
                 <p class="text-white mb-0">Fasilitas</p>
-
               </div>
-
               <div
-
                 class="col-md-6 col-lg-3 text-center wow fadeIn"
-
                 data-wow-delay="0.7s"
-
               >
-
                 <i class="fa fa-puzzle-piece fa-2x text-white mb-3"></i>
-
                 <h2 class="text-white mb-2" data-toggle="counter-up">22</h2>
-
                 <p class="text-white mb-0">Ektrakulikuler</p>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
 
     <!-- Tentang Kami -->
-
-    <!-- Pengembang -->
-
-
-
-    <!-- Pengembang -->
-
-
-
-    <!-- struktur -->
-
-    <img
-
-      src="assets/images/struktur.jpeg"
-
-      alt=""
-
-      class="struktur"
-
-      align="center"
-
-    />
-
-    <!-- struktur -->
-
-
 
     <!-- GURU -->
-
     <div class="judul" id="guru"><b>GURU</b></div>
-
     <div class="container swiper">
-
       <div class="wrapper">
-
         <div class="card-list swiper-wrapper">
-
           <!-- Single Card -->
-
-          <div class="card swiper-slide">
-
-            <div class="card-image">
-
-              <img src="guru/agustinawulansariKimia.jpg" alt="Kimia" />
-
-              <div class="card-tag">Kimia</div>
-
-            </div>
-
-            <div class="card-content">
-
-              <h3 class="card-title">Agustina Wulansari</h3>
-
-              <div class="card-footer">
-
-                <div class="card-profile">
-
-                  <img src="guru/agustinawulansariKimia.jpg" alt="Agustina" />
-
-                  <div class="card-profile-info">
-
-                    <span class="card-profile-name">Agustina Wulansari</span>
-
-                    <span class="card-profile-role">Kimia</span>
-
+            <div class="card swiper-slide">
+              <div class="card-image">
+                <img src="guru/agustinawulansariKimia.jpg" alt="Kimia" />
+                <div class="card-tag">Kimia</div>
                   </div>
-
+                    <div class="card-content">
+                    <h3 class="card-title">Agustina Wulansari</h3>
+              <div class="card-footer">
+                <div class="card-profile">
+                  <img src="guru/agustinawulansariKimia.jpg" alt="Agustina" />
+                  <div class="card-profile-info">
+                    <span class="card-profile-name">Agustina Wulansari</span>
+                    <span class="card-profile-role">Kimia</span>
+                  </div>
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
           <!-- Single Card -->
 
           <div class="card swiper-slide">
